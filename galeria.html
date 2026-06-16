@@ -1,0 +1,2290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Obras | ArteScultura</title>
+<link rel="stylesheet" href="menup.css">
+<link rel="stylesheet" href="galeria.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+<!-- ============================================
+NAVEGACIÓN
+============================================= -->
+<nav class="navbar navbar-dark" id="navbar">
+<div class="nav-container">
+<!-- Logo -->
+<a  class="logo">
+<span class="logo-icon">🎨</span>
+<span class="logo-text">ArteScultura</span>
+</a>
+<!-- Menú de navegación -->
+<ul class="nav-menu" id="nav-menu">
+<li><a href="Menup.html"  class="nav-link">Inicio</a></li>
+<li><a href="galeria.html" class="nav-link active">Galería</a></li>
+<li><a href="sobremi.html" class="nav-link">Sobre Mí</a></li>
+<li><a href="encargos.html" class="nav-link">Encargos</a></li>
+<li><a href="contacto.html" class="nav-link">Contacto</a></li>
+</ul>
+<!-- Botón de contacto -->
+<a href="https://wa.me/521234567890" class="nav-btn" target="_blank">
+<i class="fab fa-whatsapp"></i>
+Contactar
+</a>
+<!-- Menú hamburguesa (móvil) -->
+<div class="nav-toggle" id="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+<!-- ============================================
+HEADER DE PÁGINA
+============================================= -->
+<header class="page-header">
+<div class="page-header-overlay"></div>
+<div class="page-header-content">
+<span class="page-tag">Colección</span>
+<h1>Galería de Obras</h1>
+<p>Explora mi colección de esculturas y piezas artísticas únicas. Cada obra es original y hecha a mano.</p>
+<!-- Breadcrumb -->
+<nav class="breadcrumb">
+<a href="Menup.html" ><i class="fas fa-home"></i> Inicio</a>
+<span>/</span>
+<span>Galería</span>
+</nav>
+</div>
+</header>
+<!-- ============================================
+SECCIÓN DE GALERÍA
+============================================= -->
+<section class="gallery-section">
+<div class="container">
+<!-- Barra superior: Filtros y búsqueda -->
+<div class="gallery-toolbar">
+<!-- Filtros por categoría -->
+<div class="filter-buttons">
+<button class="filter-btn active" data-filter="all">
+<i class="fas fa-th"></i>
+Todas
+</button>
+<button class="filter-btn" data-filter="esculturas">
+<i class="fas fa-monument"></i>
+Esculturas
+</button>
+<button class="filter-btn" data-filter="abstracto">
+<i class="fas fa-shapes"></i>
+Abstracto
+</button>
+<button class="filter-btn" data-filter="figuras">
+<i class="fas fa-user"></i>
+Figuras
+</button>
+<button class="filter-btn" data-filter="decorativo">
+<i class="fas fa-home"></i>
+Decorativo
+</button>
+<button class="filter-btn" data-filter="jardin">
+<i class="fas fa-leaf"></i>
+Jardín
+</button>
+</div>
+<!-- Opciones de vista y orden -->
+<div class="gallery-options">
+<div class="view-options">
+<button class="view-btn active" data-view="grid">
+<i class="fas fa-th"></i>
+</button>
+<button class="view-btn" data-view="list">
+<i class="fas fa-list"></i>
+</button>
+</div>
+<select class="sort-select">
+<option value="recent">Más recientes</option>
+<option value="price-low">Precio: menor a mayor</option>
+<option value="price-high">Precio: mayor a menor</option>
+<option value="name">Nombre A-Z</option>
+</select>
+</div>
+</div>
+<!-- Contador de resultados -->
+<div class="results-info">
+<p>Mostrando <strong>12</strong> obras de <strong>12</strong></p>
+</div>
+<!-- Grid de obras -->
+<div class="gallery-grid" >
+<!-- Obra 1 -->
+<div class="gallery-card" data-category="esculturas">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500" alt="Renacer">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(1)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Renacer" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Escultura</span>
+</div>
+<div class="card-content">
+<h3>Renacer</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Bronce patinado
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+45 x 20 x 18 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$850 USD</span>
+<a href="#" class="card-link" onclick="abrirModal(); return false;">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 2 -->
+<div class="gallery-card" data-category="abstracto">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=500" alt="Viento de Mar">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(2)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Viento de Mar" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Abstracto</span>
+</div>
+<div class="card-content">
+<h3>Viento de Mar</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Resina con pigmentos
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+30 x 25 x 15 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$420 USD</span>
+<a href="#" class="card-link" onclick="abrirModalViento(2); return false;">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 3 -->
+<div class="gallery-card" data-category="figuras">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=500" alt="Guardián Silencioso">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(3)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Guardián Silencioso" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge sold">Vendida</span>
+<span class="card-category">Figura</span>
+</div>
+<div class="card-content">
+<h3>Guardián Silencioso</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Madera de nogal
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+40 x 15 x 12 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$650 USD</span>
+<a href="#" class="card-link" onclick="abrirModalGuardian(3)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 4 -->
+<div class="gallery-card" data-category="abstracto">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=500" alt="Equilibrio">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(4)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Equilibrio" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Abstracto</span>
+</div>
+<div class="card-content">
+<h3>Equilibrio</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Metal y piedra
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+55 x 30 x 25 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$1,200 USD</span>
+<a href="#" class="card-link" onclick="abrirModalEquilibrio(4)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 5 -->
+<div class="gallery-card" data-category="esculturas">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=500" alt="Danza Eterna">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(5)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Danza Eterna" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Escultura</span>
+</div>
+<div class="card-content">
+<h3>Danza Eterna</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Bronce
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+60 x 25 x 20 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$980 USD</span>
+<a href="#" class="card-link" onclick="abrirModalDanza(5)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 6 -->
+<div class="gallery-card" data-category="decorativo">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500" alt="Naturaleza Viva">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(6)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Naturaleza Viva" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Decorativo</span>
+</div>
+<div class="card-content">
+<h3>Naturaleza Viva</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Cerámica esmaltada
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+35 x 35 x 20 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$380 USD</span>
+<a href="#" class="card-link" onclick="abrirModalNaturaleza(6)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 7 -->
+<div class="gallery-card" data-category="jardin">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500" alt="Espíritu del Bosque">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(7)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Espíritu del Bosque" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Jardín</span>
+</div>
+<div class="card-content">
+<h3>Espíritu del Bosque</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Piedra tallada
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+80 x 40 x 35 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$1,500 USD</span>
+<a href="#" class="card-link" onclick="abrirModalEspiritu(7)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 8 -->
+<div class="gallery-card" data-category="figuras">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=500" alt="Pensador Moderno">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(8)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Pensador Moderno" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge reserved">Reservada</span>
+<span class="card-category">Figura</span>
+</div>
+<div class="card-content">
+<h3>Pensador Moderno</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Resina metalizada
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+50 x 25 x 22 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$720 USD</span>
+<a href="#" class="card-link" onclick="abrirModalPensador(8)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 9 -->
+<div class="gallery-card" data-category="abstracto">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500" alt="Ondas del Tiempo">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(9)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Ondas del Tiempo" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Abstracto</span>
+</div>
+<div class="card-content">
+<h3>Ondas del Tiempo</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Acero inoxidable
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+40 x 60 x 15 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$890 USD</span>
+<a href="#" class="card-link" onclick="abrirModalOndas(9)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 10 -->
+<div class="gallery-card" data-category="decorativo">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=500" alt="Armonía">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(10)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Armonía" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Decorativo</span>
+</div>
+<div class="card-content">
+<h3>Armonía</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Cristal y metal
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+25 x 25 x 40 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$550 USD</span>
+<a href="#" class="card-link" onclick="abrirModalArmonia(10)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 11 -->
+<div class="gallery-card" data-category="esculturas">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=500" alt="Fuerza Interior">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(11)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Fuerza Interior" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge sold">Vendida</span>
+<span class="card-category">Escultura</span>
+</div>
+<div class="card-content">
+<h3>Fuerza Interior</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Mármol blanco
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+70 x 30 x 25 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$2,200 USD</span>
+<a href="#" class="card-link" onclick="abrirModalFuerza(11)">Ver detalles</a>
+</div>
+</div>
+</div>
+<!-- Obra 12 -->
+<div class="gallery-card" data-category="jardin">
+<div class="card-image">
+<img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500" alt="Guardián del Jardín">
+<div class="card-overlay">
+<div class="overlay-buttons">
+<button class="overlay-btn" title="Vista rápida" onclick="openModal(12)">
+<i class="fas fa-eye"></i>
+</button>
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Guardián del Jardín" class="overlay-btn" title="Consultar" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<button class="overlay-btn" title="Favorito">
+<i class="far fa-heart"></i>
+</button>
+</div>
+</div>
+<span class="card-badge available">Disponible</span>
+<span class="card-category">Jardín</span>
+</div>
+<div class="card-content">
+<h3>Guardián del Jardín</h3>
+<p class="card-material">
+<i class="fas fa-palette"></i>
+Hierro forjado
+</p>
+<p class="card-dimensions">
+<i class="fas fa-ruler-combined"></i>
+120 x 50 x 40 cm
+</p>
+<div class="card-footer">
+<span class="card-price">$1,800 USD</span>
+<a href="#" class="card-link" onclick="abrirModalGuardianJardin(12)">Ver detalles</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Mensaje cuando no hay resultados -->
+<div class="no-results" id="no-results" style="display: none;">
+<i class="fas fa-search"></i>
+<h3>No se encontraron obras</h3>
+<p>Intenta con otra categoría o contacta para piezas personalizadas</p>
+<a href="https://wa.me/521234567890" class="btn btn-primary" target="_blank">
+<i class="fab fa-whatsapp"></i>
+Consultar por encargo
+</a>
+</div>
+<!-- Paginación (opcional) -->
+<div class="pagination">
+<button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+<button class="page-btn active">1</button>
+<button class="page-btn">2</button>
+<button class="page-btn">3</button>
+<button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
+</section>
+<!-- ============================================
+MODAL DE DETALLE DE OBRA1
+============================================= -->
+<div class="modal" id="artModal">
+<div class="modal-overlay" onclick="closeModal()"></div>
+<div class="modal-container">
+<button class="modal-close" onclick="closeModal()">
+<i class="fas fa-times"></i>
+</button>
+<div class="modal-content">
+<!-- Galería de imágenes -->
+<div class="modal-gallery">
+<div class="modal-main-image">
+<img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800" alt="Obra" id="modalMainImage">
+</div>
+<div class="modal-thumbnails">
+<img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" alt="Miniatura 1" class="thumb active">
+<img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" alt="Miniatura 2" class="thumb">
+<img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" alt="Miniatura 3" class="thumb">
+</div>
+</div>
+<!-- Información de la obra -->
+<div class="modal-info">
+<span class="modal-category">Escultura</span>
+<h2 id="modalTitle">Renacer</h2>
+<p class="modal-price" id="modalPrice">$850 USD</p>
+<div class="modal-status available">
+<i class="fas fa-check-circle"></i>
+Disponible para compra
+</div>
+<div class="modal-description">
+<h4>Descripción</h4>
+<p>Esta pieza representa la fuerza interior que todos llevamos dentro. Una figura que emerge de la tierra, simbolizando el renacimiento y la capacidad humana de superar cualquier obstáculo. El acabado en bronce patinado le da un aspecto atemporal y elegante.</p>
+</div>
+<div class="modal-specs">
+<h4>Especificaciones</h4>
+<ul>
+<li>
+<span class="spec-label"><i class="fas fa-palette"></i> Material</span>
+<span class="spec-value">Bronce patinado</span>
+</li>
+<li>
+<span class="spec-label"><i class="fas fa-ruler-combined"></i> Dimensiones</span>
+<span class="spec-value">45 x 20 x 18 cm</span>
+</li>
+<li>
+<span class="spec-label"><i class="fas fa-weight-hanging"></i> Peso</span>
+<span class="spec-value">3.5 kg</span>
+</li>
+<li>
+<span class="spec-label"><i class="fas fa-calendar"></i> Año</span>
+<span class="spec-value">2024</span>
+</li>
+</ul>
+</div>
+<div class="modal-includes">
+<h4>Incluye</h4>
+<ul>
+<li><i class="fas fa-check"></i> Certificado de autenticidad firmado</li>
+<li><i class="fas fa-check"></i> Base de madera barnizada</li>
+<li><i class="fas fa-check"></i> Embalaje especial para envío</li>
+<li><i class="fas fa-check"></i> Envío asegurado</li>
+</ul>
+</div>
+<div class="modal-actions">
+<a href="https://wa.me/521234567890?text=Hola, me interesa la obra Renacer ($850 USD). ¿Está disponible?" class="btn btn-primary btn-full" target="_blank">
+<i class="fab fa-whatsapp"></i>
+Consultar / Comprar
+</a>
+<button class="btn btn-outline btn-full">
+<i class="far fa-heart"></i>
+Guardar en favoritos
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL VIENTO DE MAR -->
+<div class="modal-detalle" id="modalVientoDeMar">
+    <div class="modal-fondo" onclick="cerrarModalViento()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalViento()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=800" alt="Viento de Mar" id="imagenPrincipalViento">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" class="mini-img activa" onclick="cambiarImagenViento(this)">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" class="mini-img" onclick="cambiarImagenViento(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenViento(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Abstracto</span>
+                <h1 class="obra-titulo">Viento de Mar</h1>
+                <p class="obra-precio">$420 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Inspirada en las olas del océano, esta pieza captura el movimiento eterno del mar. Sus curvas fluidas y tonos azules crean una sensación de calma y libertad.</p>
+                    <p>La técnica de pigmentación en capas logra un efecto de profundidad que cambia según la luz, como el agua del mar en diferentes momentos del día.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Resina con pigmentos</td></tr>
+                        <tr><td>Alto</td><td>30 cm</td></tr>
+                        <tr><td>Ancho</td><td>25 cm</td></tr>
+                        <tr><td>Profundidad</td><td>15 cm</td></tr>
+                        <tr><td>Peso</td><td>1.2 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Pigmentación en capas</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de acrílico transparente</li>
+                        <li>✓ Embalaje especial para envío</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Guía de cuidado y mantenimiento</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar con paño suave y seco</li>
+                        <li>☀️ Evitar exposición directa al sol</li>
+                        <li>💧 No sumergir en agua</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura VIENTO DE MAR ($420 USD). ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL GUARDIÁN SILENCIOSO -->
+<div class="modal-detalle" id="modalGuardian">
+    <div class="modal-fondo" onclick="cerrarModalGuardian()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalGuardian()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=800" alt="Guardián Silencioso" id="imagenPrincipalGuardian">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=200" class="mini-img activa" onclick="cambiarImagenGuardian(this)">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img" onclick="cambiarImagenGuardian(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenGuardian(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Figura</span>
+                <h1 class="obra-titulo">Guardián Silencioso</h1>
+                <p class="obra-precio">$650 USD</p>
+                
+                <div class="obra-estado vendida">
+                    ✗ Esta obra ya fue vendida
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Un rostro ancestral tallado a mano que transmite sabiduría y protección. Esta pieza representa la conexión entre el pasado y el presente, un guardián que vela en silencio.</p>
+                    <p>Cada veta de la madera forma parte natural de la expresión de la pieza, haciendo que cada ángulo revele nuevos detalles. La pátina natural del nogal le otorga calidez y profundidad.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Madera de nogal</td></tr>
+                        <tr><td>Alto</td><td>40 cm</td></tr>
+                        <tr><td>Ancho</td><td>15 cm</td></tr>
+                        <tr><td>Profundidad</td><td>12 cm</td></tr>
+                        <tr><td>Peso</td><td>2.8 kg</td></tr>
+                        <tr><td>Año</td><td>2023</td></tr>
+                        <tr><td>Técnica</td><td>Tallado a mano</td></tr>
+                        <tr><td>Acabado</td><td>Aceite natural y cera</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluía</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de madera a juego</li>
+                        <li>✓ Embalaje especial para envío</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Historia y significado de la pieza</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Sobre esta obra</h3>
+                    <p class="historia-obra">Esta pieza fue adquirida por un coleccionista privado en Madrid, España. Ahora forma parte de su colección personal de arte latinoamericano.</p>
+                </div>
+
+                <div class="obra-alternativas">
+                    <h3>¿Te interesa una pieza similar?</h3>
+                    <p>Puedo crear una obra con un concepto similar, adaptada a tus preferencias.</p>
+                    <a href="https://wa.me/521234567890?text=Hola, me interesa una obra similar al GUARDIÁN SILENCIOSO. ¿Es posible hacer un encargo?" 
+                       class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar Encargo Similar
+                    </a>
+                </div>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Encargos personalizados</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Piezas únicas</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Hecho a mano</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL EQUILIBRIO -->
+<div class="modal-detalle" id="modalEquilibrio">
+    <div class="modal-fondo" onclick="cerrarModalEquilibrio()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalEquilibrio()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=800" alt="Equilibrio" id="imagenPrincipalEquilibrio">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" class="mini-img activa" onclick="cambiarImagenEquilibrio(this)">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" class="mini-img" onclick="cambiarImagenEquilibrio(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenEquilibrio(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Abstracto</span>
+                <h1 class="obra-titulo">Equilibrio</h1>
+                <p class="obra-precio">$1,200 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Esta escultura abstracta explora la tensión entre fuerzas opuestas: lo pesado y lo ligero, lo sólido y lo etéreo. El metal frío se encuentra con la piedra ancestral en un punto de perfecta armonía.</p>
+                    <p>La pieza invita a la contemplación y reflexión sobre el balance en nuestras vidas. Cada ángulo ofrece una perspectiva diferente, simbolizando cómo el equilibrio cambia según nuestro punto de vista.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Metal y piedra natural</td></tr>
+                        <tr><td>Alto</td><td>55 cm</td></tr>
+                        <tr><td>Ancho</td><td>30 cm</td></tr>
+                        <tr><td>Profundidad</td><td>25 cm</td></tr>
+                        <tr><td>Peso</td><td>8.5 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Soldadura y tallado</td></tr>
+                        <tr><td>Acabado</td><td>Metal pulido y piedra natural</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de acero integrada</li>
+                        <li>✓ Embalaje reforzado para envío</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Guía de instalación y cuidados</li>
+                        <li>✓ Guantes de manejo incluidos</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-building"></i> Oficinas ejecutivas</span>
+                        <span class="ideal-tag"><i class="fas fa-home"></i> Salas de estar</span>
+                        <span class="ideal-tag"><i class="fas fa-hotel"></i> Lobbies de hotel</span>
+                        <span class="ideal-tag"><i class="fas fa-spa"></i> Espacios zen</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar metal con paño de microfibra</li>
+                        <li>💧 No usar productos químicos agresivos</li>
+                        <li>🧤 Manipular con guantes para evitar huellas</li>
+                        <li>🏠 Ideal para interiores</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura EQUILIBRIO ($1,200 USD). ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío mundial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-box-open"></i>
+                        <span>Embalaje reforzado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL DANZA ETERNA -->
+<div class="modal-detalle" id="modalDanza">
+    <div class="modal-fondo" onclick="cerrarModalDanza()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalDanza()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=800" alt="Danza Eterna" id="imagenPrincipalDanza">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img activa" onclick="cambiarImagenDanza(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenDanza(this)">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" class="mini-img" onclick="cambiarImagenDanza(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Escultura</span>
+                <h1 class="obra-titulo">Danza Eterna</h1>
+                <p class="obra-precio">$980 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una celebración del movimiento capturado en bronce. Esta figura elegante representa la gracia y fluidez de la danza, congelando un instante de pura expresión artística que parece desafiar la gravedad.</p>
+                    <p>Inspirada en el ballet clásico, la pieza transmite ligereza a pesar de la solidez del bronce. Las líneas curvas guían la mirada en un recorrido continuo, como si la figura estuviera a punto de cobrar vida.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Bronce macizo</td></tr>
+                        <tr><td>Alto</td><td>60 cm</td></tr>
+                        <tr><td>Ancho</td><td>25 cm</td></tr>
+                        <tr><td>Profundidad</td><td>20 cm</td></tr>
+                        <tr><td>Peso</td><td>5.2 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Fundición a la cera perdida</td></tr>
+                        <tr><td>Acabado</td><td>Pátina dorada y marrón</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de mármol negro pulido</li>
+                        <li>✓ Embalaje de museo para envío</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Placa con título y firma</li>
+                        <li>✓ Guía de cuidados del bronce</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Inspiración</h3>
+                    <div class="inspiracion-box">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"La danza es la poesía del cuerpo. Esta pieza busca capturar ese instante mágico donde el movimiento se convierte en arte eterno."</p>
+                        <span class="autor">— Juan García, el artista</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-theater-masks"></i> Amantes del ballet</span>
+                        <span class="ideal-tag"><i class="fas fa-music"></i> Estudios de danza</span>
+                        <span class="ideal-tag"><i class="fas fa-couch"></i> Salas elegantes</span>
+                        <span class="ideal-tag"><i class="fas fa-gift"></i> Regalo especial</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧤 Manipular con guantes de algodón</li>
+                        <li>🧹 Limpiar con paño suave y seco</li>
+                        <li>✨ Aplicar cera para bronce cada 6 meses</li>
+                        <li>🏠 Mantener en interiores</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura DANZA ETERNA ($980 USD). ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío mundial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-medal"></i>
+                        <span>Bronce auténtico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL NATURALEZA VIVA -->
+<div class="modal-detalle" id="modalNaturaleza">
+    <div class="modal-fondo" onclick="cerrarModalNaturaleza()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalNaturaleza()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800" alt="Naturaleza Viva" id="imagenPrincipalNaturaleza">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=200" class="mini-img activa" onclick="cambiarImagenNaturaleza(this)">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" class="mini-img" onclick="cambiarImagenNaturaleza(this)">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" class="mini-img" onclick="cambiarImagenNaturaleza(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Decorativo</span>
+                <h1 class="obra-titulo">Naturaleza Viva</h1>
+                <p class="obra-precio">$380 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una celebración de las formas orgánicas de la naturaleza capturadas en cerámica. Esta pieza decorativa trae la esencia del mundo natural a cualquier espacio interior, con sus curvas suaves y colores inspirados en la tierra.</p>
+                    <p>El esmalte artesanal crea tonalidades únicas que varían sutilmente según la luz, evocando hojas, flores y elementos botánicos en una composición armoniosa y atemporal.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Cerámica esmaltada</td></tr>
+                        <tr><td>Alto</td><td>35 cm</td></tr>
+                        <tr><td>Ancho</td><td>35 cm</td></tr>
+                        <tr><td>Profundidad</td><td>20 cm</td></tr>
+                        <tr><td>Peso</td><td>2.5 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Modelado a mano y esmaltado</td></tr>
+                        <tr><td>Acabado</td><td>Esmalte brillante con tonos tierra</td></tr>
+                        <tr><td>Cocción</td><td>Alta temperatura (1200°C)</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de fieltro protector</li>
+                        <li>✓ Embalaje especial anti-golpes</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Tarjeta con historia de la pieza</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Colores</h3>
+                    <div class="colores-obra">
+                        <span class="color-tag" style="background: #8B7355;"></span>
+                        <span class="color-tag" style="background: #6B8E23;"></span>
+                        <span class="color-tag" style="background: #DAA520;"></span>
+                        <span class="color-tag" style="background: #D2691E;"></span>
+                        <span class="color-tag" style="background: #F5DEB3;"></span>
+                    </div>
+                    <p class="colores-nota">Tonos tierra y verdes naturales</p>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-leaf"></i> Decoración natural</span>
+                        <span class="ideal-tag"><i class="fas fa-couch"></i> Mesas de centro</span>
+                        <span class="ideal-tag"><i class="fas fa-door-open"></i> Recibidores</span>
+                        <span class="ideal-tag"><i class="fas fa-book-open"></i> Bibliotecas</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar con paño húmedo suave</li>
+                        <li>💧 La cerámica esmaltada resiste la humedad</li>
+                        <li>☀️ Evitar luz solar directa prolongada</li>
+                        <li>🏠 Ideal para interiores</li>
+                        <li>⚠️ Manipular con cuidado, es frágil</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura NATURALEZA VIVA ($380 USD). ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío cuidadoso</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Hecho a mano</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL ESPÍRITU DEL BOSQUE -->
+<div class="modal-detalle" id="modalEspiritu">
+    <div class="modal-fondo" onclick="cerrarModalEspiritu()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalEspiritu()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Espíritu del Bosque" id="imagenPrincipalEspiritu">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200" class="mini-img activa" onclick="cambiarImagenEspiritu(this)">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img" onclick="cambiarImagenEspiritu(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenEspiritu(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Jardín</span>
+                <h1 class="obra-titulo">Espíritu del Bosque</h1>
+                <p class="obra-precio">$1,500 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+
+                <div class="obra-destacado exterior">
+                    <i class="fas fa-sun"></i>
+                    <span>Apta para exteriores</span>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una figura mística que emerge de la piedra, evocando los antiguos espíritus guardianes de los bosques. Esta imponente escultura está diseñada para convertirse en el alma de tu jardín, creando un punto focal lleno de misterio y conexión con la naturaleza.</p>
+                    <p>Tallada en piedra natural resistente a la intemperie, esta pieza adquiere más carácter con el paso del tiempo, desarrollando una pátina natural que la integra armoniosamente con su entorno.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Piedra natural tallada</td></tr>
+                        <tr><td>Alto</td><td>80 cm</td></tr>
+                        <tr><td>Ancho</td><td>40 cm</td></tr>
+                        <tr><td>Profundidad</td><td>35 cm</td></tr>
+                        <tr><td>Peso</td><td>45 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Tallado directo en piedra</td></tr>
+                        <tr><td>Acabado</td><td>Natural con sellador protector</td></tr>
+                        <tr><td>Resistencia</td><td>Apta para exteriores</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de piedra integrada</li>
+                        <li>✓ Sellador protector aplicado</li>
+                        <li>✓ Embalaje industrial reforzado</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Guía de instalación en jardín</li>
+                        <li>✓ Consulta de ubicación incluida</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Características Especiales</h3>
+                    <div class="caracteristicas-grid">
+                        <div class="caracteristica-item">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                            <span>Resistente a lluvia</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-sun"></i>
+                            <span>Resistente al sol</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Resistente a heladas</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-hourglass-half"></i>
+                            <span>Durabilidad eterna</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-leaf"></i> Jardines</span>
+                        <span class="ideal-tag"><i class="fas fa-tree"></i> Patios</span>
+                        <span class="ideal-tag"><i class="fas fa-water"></i> Junto a fuentes</span>
+                        <span class="ideal-tag"><i class="fas fa-spa"></i> Espacios zen</span>
+                        <span class="ideal-tag"><i class="fas fa-door-open"></i> Entradas</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar con agua y cepillo suave</li>
+                        <li>🛡️ Reaplicar sellador cada 2 años</li>
+                        <li>🍂 Retirar hojas y residuos acumulados</li>
+                        <li>✅ No requiere mantenimiento especial</li>
+                        <li>🌿 El musgo natural es bienvenido</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Envío Especial</h3>
+                    <div class="envio-especial">
+                        <i class="fas fa-truck-loading"></i>
+                        <div>
+                            <p><strong>Envío en tarima de madera</strong></p>
+                            <p>Debido al peso de esta pieza (45 kg), se envía en embalaje industrial con tarima. Se recomienda ayuda para la instalación.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura ESPÍRITU DEL BOSQUE ($1,500 USD) para mi jardín. ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío especial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-mountain"></i>
+                        <span>Piedra natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL PENSADOR MODERNO -->
+<div class="modal-detalle" id="modalPensador">
+    <div class="modal-fondo" onclick="cerrarModalPensador()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalPensador()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=800" alt="Pensador Moderno" id="imagenPrincipalPensador">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=200" class="mini-img activa" onclick="cambiarImagenPensador(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenPensador(this)">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img" onclick="cambiarImagenPensador(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Figura</span>
+                <h1 class="obra-titulo">Pensador Moderno</h1>
+                <p class="obra-precio">$720 USD</p>
+                
+                <div class="obra-estado reservada">
+                    <i class="fas fa-clock"></i> Reservada - En proceso de venta
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una reinterpretación contemporánea del clásico pensador. Esta figura reflexiva captura el momento de profunda contemplación, donde la mente se sumerge en los misterios de la existencia.</p>
+                    <p>El acabado metalizado le otorga un aspecto futurista mientras mantiene la esencia atemporal de la figura humana en meditación. Cada línea y curva está diseñada para transmitir introspección y serenidad.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Resina metalizada</td></tr>
+                        <tr><td>Alto</td><td>50 cm</td></tr>
+                        <tr><td>Ancho</td><td>25 cm</td></tr>
+                        <tr><td>Profundidad</td><td>22 cm</td></tr>
+                        <tr><td>Peso</td><td>3.8 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Moldeado y acabado a mano</td></tr>
+                        <tr><td>Acabado</td><td>Metalizado plata antigua</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de madera oscura</li>
+                        <li>✓ Embalaje especial para envío</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Guía de cuidado y limpieza</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Acabados Disponibles</h3>
+                    <div class="acabados-grid">
+                        <div class="acabado-item activo">
+                            <div class="acabado-color" style="background: linear-gradient(135deg, #8c8c8c, #c0c0c0);"></div>
+                            <span>Plata antigua</span>
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="acabado-item">
+                            <div class="acabado-color" style="background: linear-gradient(135deg, #cd7f32, #daa520);"></div>
+                            <span>Bronce</span>
+                        </div>
+                        <div class="acabado-item">
+                            <div class="acabado-color" style="background: linear-gradient(135deg, #1a1a1a, #4a4a4a);"></div>
+                            <span>Negro mate</span>
+                        </div>
+                    </div>
+                    <p class="acabados-nota"><i class="fas fa-info-circle"></i> Otros acabados disponibles por encargo</p>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-briefcase"></i> Oficinas</span>
+                        <span class="ideal-tag"><i class="fas fa-book"></i> Bibliotecas</span>
+                        <span class="ideal-tag"><i class="fas fa-university"></i> Despachos</span>
+                        <span class="ideal-tag"><i class="fas fa-gift"></i> Regalo ejecutivo</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar con paño de microfibra seco</li>
+                        <li>🚫 Evitar productos químicos</li>
+                        <li>💧 No exponer a humedad excesiva</li>
+                        <li>🏠 Solo para interiores</li>
+                    </ul>
+                </div>
+
+                <div class="obra-reserva-info">
+                    <div class="reserva-icono">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="reserva-texto">
+                        <h4>Esta obra está reservada</h4>
+                        <p>Un cliente ha reservado esta pieza y está en proceso de completar la compra. Si no se concreta en 7 días, volverá a estar disponible.</p>
+                    </div>
+                </div>
+
+                <div class="obra-alternativas">
+                    <h3>¿Te interesa esta obra?</h3>
+                    <p>Puedo avisarte si vuelve a estar disponible o crear una pieza similar con el acabado que prefieras.</p>
+                    <div class="alternativas-botones">
+                        <a href="https://wa.me/521234567890?text=Hola, me interesa el PENSADOR MODERNO ($720 USD). ¿Puede avisarme si vuelve a estar disponible?" 
+                           class="btn-avisar" target="_blank">
+                            <i class="fas fa-bell"></i> Avisarme si está disponible
+                        </a>
+                        <a href="https://wa.me/521234567890?text=Hola, me gustaría encargar una pieza similar al PENSADOR MODERNO. ¿Es posible?" 
+                           class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Encargar una similar
+                        </a>
+                    </div>
+                </div>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío mundial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Acabados personalizados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL ONDAS DEL TIEMPO -->
+<div class="modal-detalle" id="modalOndas">
+    <div class="modal-fondo" onclick="cerrarModalOndas()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalOndas()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Galería de Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800" 
+                         alt="Ondas del Tiempo" 
+                         id="imagenPrincipalOndas">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=200" 
+                         class="mini-img activa" 
+                         onclick="cambiarImagenOndas(this)"
+                         alt="Vista principal">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" 
+                         class="mini-img" 
+                         onclick="cambiarImagenOndas(this)"
+                         alt="Vista lateral">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" 
+                         class="mini-img" 
+                         onclick="cambiarImagenOndas(this)"
+                         alt="Detalle">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" 
+                         class="mini-img" 
+                         onclick="cambiarImagenOndas(this)"
+                         alt="Vista completa">
+                </div>
+            </div>
+            
+            <!-- Información de la Obra -->
+            <div class="modal-info">
+                <span class="obra-categoria">Abstracto</span>
+                <h1 class="obra-titulo">Ondas del Tiempo</h1>
+                <p class="obra-precio">$890 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra inmediata
+                </div>
+                
+                <!-- Descripción -->
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una pieza hipnótica que captura el flujo eterno del tiempo a través de ondas de acero inoxidable. Esta escultura abstracta juega con la luz y los reflejos, creando patrones dinámicos que cambian según el ángulo de observación.</p>
+                    <p>Las curvas sinuosas representan las ondas temporales, los momentos que se entrelazan entre pasado, presente y futuro. El acabado espejo del acero refleja el entorno, integrando el espacio circundante en la obra misma.</p>
+                </div>
+                
+                <!-- Especificaciones -->
+                <div class="obra-seccion">
+                    <h3>Especificaciones Técnicas</h3>
+                    <table class="tabla-specs">
+                        <tr><td><i class="fas fa-cube"></i> Material</td><td>Acero inoxidable 316L</td></tr>
+                        <tr><td><i class="fas fa-arrows-alt-v"></i> Alto</td><td>40 cm</td></tr>
+                        <tr><td><i class="fas fa-arrows-alt-h"></i> Ancho</td><td>60 cm</td></tr>
+                        <tr><td><i class="fas fa-expand-arrows-alt"></i> Profundidad</td><td>15 cm</td></tr>
+                        <tr><td><i class="fas fa-weight"></i> Peso</td><td>7.2 kg</td></tr>
+                        <tr><td><i class="fas fa-calendar"></i> Año</td><td>2024</td></tr>
+                        <tr><td><i class="fas fa-hammer"></i> Técnica</td><td>Forjado y pulido a mano</td></tr>
+                        <tr><td><i class="fas fa-paint-brush"></i> Acabado</td><td>Pulido espejo de alto brillo</td></tr>
+                    </table>
+                </div>
+                
+                <!-- Características Especiales -->
+                <div class="obra-seccion">
+                    <h3>Características Únicas</h3>
+                    <div class="caracteristicas-grid">
+                        <div class="caracteristica-item">
+                            <i class="fas fa-sun"></i>
+                            <span>Refleja la luz natural</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-water"></i>
+                            <span>Efecto ondulante</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Pieza única</span>
+                        </div>
+                        <div class="caracteristica-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Anti-corrosión</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Incluye -->
+                <div class="obra-seccion">
+                    <h3>La Compra Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado y numerado</li>
+                        <li>✓ Base de mármol negro Marquina</li>
+                        <li>✓ Kit de limpieza profesional para acero</li>
+                        <li>✓ Embalaje museum-quality con caja de madera</li>
+                        <li>✓ Seguro de envío internacional</li>
+                        <li>✓ Guantes de algodón para manipulación</li>
+                        <li>✓ Documento con la inspiración de la obra</li>
+                        <li>✓ Video del proceso de creación (digital)</li>
+                    </ul>
+                </div>
+
+                <!-- Inspiración -->
+                <div class="obra-seccion">
+                    <h3>Inspiración del Artista</h3>
+                    <div class="inspiracion-box">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"El tiempo no es lineal, fluye como las olas del mar. Esta pieza nació de largas contemplaciones frente al océano, observando cómo las ondas se repiten pero nunca son iguales, como los momentos de nuestra vida."</p>
+                        <span class="autor">— Juan García, el artista</span>
+                    </div>
+                </div>
+
+                <!-- Ideal Para -->
+                <div class="obra-seccion">
+                    <h3>Espacios Ideales</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-building"></i> Lobbies corporativos</span>
+                        <span class="ideal-tag"><i class="fas fa-couch"></i> Salas modernas</span>
+                        <span class="ideal-tag"><i class="fas fa-utensils"></i> Restaurantes elegantes</span>
+                        <span class="ideal-tag"><i class="fas fa-hotel"></i> Hoteles boutique</span>
+                        <span class="ideal-tag"><i class="fas fa-palette"></i> Galerías</span>
+                    </div>
+                </div>
+
+                <!-- Cuidados -->
+                <div class="obra-seccion">
+                    <h3>Cuidados y Mantenimiento</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧤 Siempre manipular con guantes de algodón</li>
+                        <li>🧹 Limpiar semanalmente con paño de microfibra</li>
+                        <li>✨ Usar limpiador específico para acero inoxidable</li>
+                        <li>🚫 Evitar productos abrasivos o ácidos</li>
+                        <li>💎 Pulir mensualmente para mantener el brillo</li>
+                        <li>🏠 Apta para interiores y exteriores cubiertos</li>
+                    </ul>
+                </div>
+
+                
+
+                <!-- Proceso de Compra -->
+                <div class="obra-seccion">
+                    <h3>Proceso de Compra</h3>
+                    <div class="proceso-compra">
+                        <div class="proceso-paso">
+                            <span class="paso-numero">1</span>
+                            <h4>Consulta</h4>
+                            <p>Contacta para confirmar disponibilidad</p>
+                        </div>
+                        <div class="proceso-paso">
+                            <span class="paso-numero">2</span>
+                            <h4>Pago</h4>
+                            <p>50% anticipo, 50% antes del envío</p>
+                        </div>
+                        <div class="proceso-paso">
+                            <span class="paso-numero">3</span>
+                            <h4>Preparación</h4>
+                            <p>Embalaje profesional (3-5 días)</p>
+                        </div>
+                        <div class="proceso-paso">
+                            <span class="paso-numero">4</span>
+                            <h4>Envío</h4>
+                            <p>Envío asegurado con tracking</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="modal-acciones">
+                    <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura ONDAS DEL TIEMPO ($890 USD). Me gustaría conocer más detalles y proceso de compra." 
+                       class="btn-whatsapp btn-principal" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Comprar Ahora
+                    </a>
+                    
+                
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL ARMONÍA -->
+<div class="modal-detalle" id="modalArmonia">
+    <div class="modal-fondo" onclick="cerrarModalArmonia()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalArmonia()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=800" alt="Armonía" id="imagenPrincipalArmonia">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=200" class="mini-img activa" onclick="cambiarImagenArmonia(this)">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=200" class="mini-img" onclick="cambiarImagenArmonia(this)">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=200" class="mini-img" onclick="cambiarImagenArmonia(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Decorativo</span>
+                <h1 class="obra-titulo">Armonía</h1>
+                <p class="obra-precio">$550 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una fusión perfecta de cristal y metal que captura la esencia del equilibrio visual. Esta pieza decorativa juega con la luz y la transparencia, creando reflejos cambiantes que dan vida a cualquier espacio.</p>
+                    <p>Inspirada en la música y sus ondas sonoras, la escultura representa cómo diferentes elementos pueden coexistir en perfecta armonía, complementándose mutuamente para crear algo más grande que la suma de sus partes.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Cristal soplado y metal</td></tr>
+                        <tr><td>Alto</td><td>40 cm</td></tr>
+                        <tr><td>Ancho</td><td>25 cm</td></tr>
+                        <tr><td>Profundidad</td><td>25 cm</td></tr>
+                        <tr><td>Peso</td><td>2.8 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Soplado de vidrio y soldadura</td></tr>
+                        <tr><td>Acabado</td><td>Cristal pulido y metal cepillado</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de metal integrada</li>
+                        <li>✓ Embalaje premium anti-golpes</li>
+                        <li>✓ Envío asegurado</li>
+                        <li>✓ Guía de cuidados del cristal</li>
+                        <li>✓ Guantes de manipulación</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Juego de Luces</h3>
+                    <div class="luces-info">
+                        <div class="luz-item">
+                            <i class="fas fa-sun"></i>
+                            <div>
+                                <h4>Luz Natural</h4>
+                                <p>Crea arcoíris y reflejos que danzan por la habitación</p>
+                            </div>
+                        </div>
+                        <div class="luz-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Luz Artificial</h4>
+                                <p>Brilla con elegancia bajo iluminación cálida</p>
+                            </div>
+                        </div>
+                        <div class="luz-item">
+                            <i class="fas fa-moon"></i>
+                            <div>
+                                <h4>Luz Tenue</h4>
+                                <p>Refleja sutilmente, creando ambiente íntimo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-couch"></i> Salas de estar</span>
+                        <span class="ideal-tag"><i class="fas fa-bed"></i> Dormitorios</span>
+                        <span class="ideal-tag"><i class="fas fa-briefcase"></i> Oficinas elegantes</span>
+                        <span class="ideal-tag"><i class="fas fa-gift"></i> Regalo de bodas</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Cuidados</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧤 Manipular siempre con guantes</li>
+                        <li>🧹 Limpiar cristal con paño de microfibra</li>
+                        <li>💧 Usar limpiador de vidrios sin amoníaco</li>
+                        <li>☀️ Ubicar donde reciba luz para mayor efecto</li>
+                        <li>⚠️ Pieza delicada, manipular con cuidado</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ubicación Recomendada</h3>
+                    <div class="ubicacion-recomendada">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Para maximizar su belleza, ubica esta pieza cerca de una ventana o fuente de luz natural. Los rayos del sol atravesando el cristal crean un espectáculo visual único cada día.</p>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura ARMONÍA ($550 USD). ¿Está disponible?" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Embalaje especial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Envío asegurado</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-gem"></i>
+                        <span>Cristal artesanal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL FUERZA INTERIOR -->
+<div class="modal-detalle" id="modalFuerza">
+    <div class="modal-fondo" onclick="cerrarModalFuerza()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalFuerza()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800" alt="Fuerza Interior" id="imagenPrincipalFuerza">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=200" class="mini-img activa" onclick="cambiarImagenFuerza(this)">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img" onclick="cambiarImagenFuerza(this)">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img" onclick="cambiarImagenFuerza(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Escultura</span>
+                <h1 class="obra-titulo">Fuerza Interior</h1>
+                <p class="obra-precio">$2,200 USD</p>
+                
+                <div class="obra-estado vendida">
+                    ✗ Esta obra ya fue vendida
+                </div>
+
+                <div class="obra-badge premium">
+                    <i class="fas fa-crown"></i>
+                    <span>Pieza de Colección</span>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una majestuosa figura tallada en mármol blanco que representa la fortaleza del espíritu humano. Esta pieza monumental captura el momento exacto en que la determinación interior se manifiesta en forma física.</p>
+                    <p>El mármol de Carrara, el mismo que utilizó Miguel Ángel, fue cuidadosamente seleccionado por sus vetas únicas que añaden profundidad y carácter a la escultura. Cada golpe de cincel fue dado con intención, revelando la forma que yacía oculta dentro de la piedra.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Mármol blanco de Carrara</td></tr>
+                        <tr><td>Alto</td><td>70 cm</td></tr>
+                        <tr><td>Ancho</td><td>30 cm</td></tr>
+                        <tr><td>Profundidad</td><td>25 cm</td></tr>
+                        <tr><td>Peso</td><td>35 kg</td></tr>
+                        <tr><td>Año</td><td>2023</td></tr>
+                        <tr><td>Técnica</td><td>Tallado directo en mármol</td></tr>
+                        <tr><td>Acabado</td><td>Pulido espejo y texturas naturales</td></tr>
+                        <tr><td>Origen del mármol</td><td>Carrara, Italia</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluía</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Pedestal de mármol negro a juego</li>
+                        <li>✓ Embalaje de museo con caja de madera</li>
+                        <li>✓ Seguro de transporte premium</li>
+                        <li>✓ Documentación del proceso de creación</li>
+                        <li>✓ Fotografías del proceso de tallado</li>
+                        <li>✓ Certificado de origen del mármol</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Historia de la Pieza</h3>
+                    <div class="historia-pieza">
+                        <div class="historia-timeline">
+                            <div class="historia-item">
+                                <div class="historia-fecha">Enero 2023</div>
+                                <p>Selección del bloque de mármol en Carrara, Italia</p>
+                            </div>
+                            <div class="historia-item">
+                                <div class="historia-fecha">Febrero - Mayo 2023</div>
+                                <p>4 meses de tallado minucioso en el taller</p>
+                            </div>
+                            <div class="historia-item">
+                                <div class="historia-fecha">Junio 2023</div>
+                                <p>Exhibición en Galería Nacional de Arte</p>
+                            </div>
+                            <div class="historia-item">
+                                <div class="historia-fecha">Agosto 2023</div>
+                                <p>Adquirida por coleccionista privado en Nueva York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Reconocimientos</h3>
+                    <div class="reconocimientos">
+                        <div class="reconocimiento-item">
+                            <i class="fas fa-award"></i>
+                            <span>Mención de Honor - Bienal de Escultura 2023</span>
+                        </div>
+                        <div class="reconocimiento-item">
+                            <i class="fas fa-star"></i>
+                            <span>Seleccionada para exposición permanente</span>
+                        </div>
+                        <div class="reconocimiento-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Reseñada en Art Magazine Internacional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Propietario Actual</h3>
+                    <div class="propietario-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Esta pieza forma parte de una colección privada en <strong>Nueva York, Estados Unidos</strong>. Actualmente se exhibe en la residencia del coleccionista.</p>
+                    </div>
+                </div>
+
+                <div class="obra-alternativas">
+                    <h3>¿Te gustaría una pieza similar?</h3>
+                    <p>Puedo crear una obra única en mármol, inspirada en este concepto pero con tu propia visión. Cada pieza de mármol es irrepetible.</p>
+                    <div class="alternativas-botones">
+                        <a href="https://wa.me/521234567890?text=Hola, me interesa encargar una escultura en mármol similar a FUERZA INTERIOR. ¿Podemos hablar sobre las opciones?" 
+                           class="btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Consultar Encargo en Mármol
+                        </a>
+                        <a href="galeria.html" class="btn-ver-mas">
+                            <i class="fas fa-images"></i> Ver Obras Disponibles
+                        </a>
+                    </div>
+                </div>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-gem"></i>
+                        <span>Mármol italiano</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-hand-sparkles"></i>
+                        <span>Tallado a mano</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Pieza de museo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL GUARDIÁN DEL JARDÍN -->
+<div class="modal-detalle" id="modalGuardianJardin">
+    <div class="modal-fondo" onclick="cerrarModalGuardianJardin()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModalGuardianJardin()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=800" alt="Guardián del Jardín" id="imagenPrincipalGuardianJardin">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=200" class="mini-img activa" onclick="cambiarImagenGuardianJardin(this)">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200" class="mini-img" onclick="cambiarImagenGuardianJardin(this)">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=200" class="mini-img" onclick="cambiarImagenGuardianJardin(this)">
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Jardín</span>
+                <h1 class="obra-titulo">Guardián del Jardín</h1>
+                <p class="obra-precio">$1,800 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+
+                <div class="obra-destacado exterior">
+                    <i class="fas fa-sun"></i>
+                    <span>Apta para exteriores</span>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Una imponente figura forjada en hierro que se erige como protector de espacios verdes. Este guardián silencioso combina la fuerza del metal con formas orgánicas inspiradas en la naturaleza, creando una presencia que dialoga armoniosamente con plantas y flores.</p>
+                    <p>El proceso de forja tradicional y el acabado con pátina protectora garantizan que esta pieza no solo resista el paso del tiempo, sino que gane carácter y belleza con los años, desarrollando tonalidades únicas que la integran al jardín.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Hierro forjado a mano</td></tr>
+                        <tr><td>Alto</td><td>120 cm</td></tr>
+                        <tr><td>Ancho</td><td>50 cm</td></tr>
+                        <tr><td>Profundidad</td><td>40 cm</td></tr>
+                        <tr><td>Peso</td><td>65 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                        <tr><td>Técnica</td><td>Forja tradicional y soldadura</td></tr>
+                        <tr><td>Acabado</td><td>Pátina protectora anti-oxidante</td></tr>
+                        <tr><td>Resistencia</td><td>Exterior permanente</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de anclaje para suelo</li>
+                        <li>✓ Kit de instalación completo</li>
+                        <li>✓ Tornillería de acero inoxidable</li>
+                        <li>✓ Envío en embalaje industrial</li>
+                        <li>✓ Seguro de transporte</li>
+                        <li>✓ Guía de instalación paso a paso</li>
+                        <li>✓ Mantenimiento anual gratuito (primer año)</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Resistencia Garantizada</h3>
+                    <div class="resistencia-grid">
+                        <div class="resistencia-item">
+                            <div class="resistencia-icono">
+                                <i class="fas fa-cloud-showers-heavy"></i>
+                            </div>
+                            <h4>Lluvia</h4>
+                            <p>Pátina protectora impermeable</p>
+                        </div>
+                        <div class="resistencia-item">
+                            <div class="resistencia-icono">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <h4>Sol Intenso</h4>
+                            <p>No se decolora ni degrada</p>
+                        </div>
+                        <div class="resistencia-item">
+                            <div class="resistencia-icono">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                            <h4>Heladas</h4>
+                            <p>Soporta temperaturas bajo cero</p>
+                        </div>
+                        <div class="resistencia-item">
+                            <div class="resistencia-icono">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h4>Viento</h4>
+                            <p>Base de anclaje resistente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Ideal para</h3>
+                    <div class="ideal-para">
+                        <span class="ideal-tag"><i class="fas fa-leaf"></i> Jardines</span>
+                        <span class="ideal-tag"><i class="fas fa-home"></i> Patios</span>
+                        <span class="ideal-tag"><i class="fas fa-door-open"></i> Entradas</span>
+                        <span class="ideal-tag"><i class="fas fa-tree"></i> Parques privados</span>
+                        <span class="ideal-tag"><i class="fas fa-swimming-pool"></i> Junto a piscinas</span>
+                        <span class="ideal-tag"><i class="fas fa-building"></i> Fincas</span>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Instalación</h3>
+                    <div class="instalacion-info">
+                        <div class="instalacion-opcion">
+                            <div class="opcion-icono incluido">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="opcion-texto">
+                                <h4>Instalación Personal</h4>
+                                <p>Incluimos guía detallada, kit de anclaje y video tutorial para que puedas instalarla tú mismo.</p>
+                                <span class="opcion-tag">Incluido</span>
+                            </div>
+                        </div>
+                        <div class="instalacion-opcion">
+                            <div class="opcion-icono premium">
+                                <i class="fas fa-user-hard-hat"></i>
+                            </div>
+                            <div class="opcion-texto">
+                                <h4>Instalación Profesional</h4>
+                                <p>Nuestro equipo instala la pieza en tu jardín y te asesora sobre la mejor ubicación.</p>
+                                <span class="opcion-tag premium">+ $150 USD (CDMX y área metropolitana)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Mantenimiento</h3>
+                    <ul class="lista-cuidados">
+                        <li>🧹 Limpiar con agua y cepillo suave cada 3 meses</li>
+                        <li>🛡️ Reaplicar cera protectora cada 2 años</li>
+                        <li>🍂 Retirar hojas y residuos acumulados</li>
+                        <li>🔩 Verificar anclajes una vez al año</li>
+                        <li>✨ El óxido superficial es parte de su encanto</li>
+                    </ul>
+                </div>
+
+                <div class="obra-seccion">
+                    <h3>Envío Especial</h3>
+                    <div class="envio-especial">
+                        <i class="fas fa-truck-loading"></i>
+                        <div>
+                            <p><strong>Envío en tarima industrial</strong></p>
+                            <p>Debido al peso (65 kg) y dimensiones, esta pieza se envía en embalaje especial con tarima de madera. El envío incluye maniobras de descarga a pie de calle.</p>
+                            <p class="envio-nota"><i class="fas fa-info-circle"></i> Se recomienda coordinar ayuda para mover la pieza al lugar de instalación.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura GUARDIÁN DEL JARDÍN ($1,800 USD) para mi jardín. ¿Está disponible? Me gustaría más información sobre el envío e instalación." 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+
+                <div class="obra-garantias">
+                    <div class="garantia-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Envío especial</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Garantía 10 años</span>
+                    </div>
+                    <div class="garantia-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Forja artesanal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+SECCIÓN CTA - ENCARGOS
+============================================= -->
+<section class="gallery-cta">
+<div class="container">
+<div class="cta-box">
+<div class="cta-icon">
+<i class="fas fa-magic"></i>
+</div>
+<div class="cta-text">
+<h3>¿No encuentras lo que buscas?</h3>
+<p>Creo obras personalizadas según tu visión. Cuéntame tu idea y hagamos realidad esa pieza única.</p>
+</div>
+<a href="https://wa.me/521234567890?text=Hola, me gustaría consultar sobre una obra por encargo" class="btn btn-primary" target="_blank">
+<i class="fab fa-whatsapp"></i>
+Solicitar encargo
+</a>
+</div>
+</div>
+</section>
+<!-- ============================================
+FOOTER
+============================================= -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<!-- Marca -->
+<div class="footer-brand">
+<a href="index.html" class="logo">
+<span class="logo-icon">🎨</span>
+<span class="logo-text">ArteScultura</span>
+</a>
+<p>Arte y esculturas originales hechas a mano con pasión. Cada pieza cuenta una historia única.</p>
+<div class="footer-social">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-pinterest-p"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+<!-- Enlaces -->
+<div class="footer-links">
+<h4>Navegación</h4>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="sobremi.html">Sobre Mí</a></li>
+<li><a href="encargos.html">Encargos</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</div>
+<!-- Categorías -->
+<div class="footer-links">
+<h4>Categorías</h4>
+<ul>
+<li><a href="#">Esculturas</a></li>
+<li><a href="#">Arte Abstracto</a></li>
+<li><a href="#">Figuras</a></li>
+<li><a href="#">Decorativo</a></li>
+<li><a href="#">Jardín</a></li>
+</ul>
+</div>
+<!-- Contacto -->
+<div class="footer-contact">
+<h4>Contacto</h4>
+<ul>
+<li>
+<i class="fab fa-whatsapp"></i>
+<a href="https://wa.me/521234567890">+52 123 456 7890</a>
+</li>
+<li>
+<i class="fas fa-envelope"></i>
+<a href="mailto:contacto@artescultura.com">contacto@artescultura.com</a>
+</li>
+<li>
+<i class="fas fa-map-marker-alt"></i>
+<span>Ciudad de México, México</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 ArteScultura. Todos los derechos reservados.</p>
+<div class="footer-payments">
+<span>Métodos de pago:</span>
+<i class="fab fa-cc-visa"></i>
+<i class="fab fa-cc-mastercard"></i>
+<i class="fab fa-cc-paypal"></i>
+</div>
+</div>
+</div>
+</footer>
+<!-- ============================================
+BOTÓN WHATSAPP FLOTANTE
+============================================= -->
+<a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+
+<script src="galeria.js"></script>
+<script src="Detalles.js"></script>
+
+<!-- MODAL RENACER -->
+<div class="modal-detalle" id="modalRenacer">
+    <div class="modal-fondo" onclick="cerrarModal()"></div>
+    <div class="modal-caja">
+        <button class="modal-cerrar" onclick="cerrarModal()">✕</button>
+        
+        <div class="modal-contenido">
+            <!-- Imágenes -->
+            <div class="modal-galeria">
+                <div class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800" alt="Renacer" id="imagenPrincipal">
+                </div>
+                <div class="imagenes-pequenas">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=200" class="mini-img activa" onclick="cambiarImagen(this)">
+                    
+                </div>
+            </div>
+            
+            <!-- Información -->
+            <div class="modal-info">
+                <span class="obra-categoria">Escultura</span>
+                <h1 class="obra-titulo">Renacer</h1>
+                <p class="obra-precio">$850 USD</p>
+                
+                <div class="obra-estado disponible">
+                    ✓ Disponible para compra
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Descripción</h3>
+                    <p>Esta pieza representa la fuerza interior que todos llevamos dentro. Una figura humana emerge de la tierra, simbolizando el renacimiento y la capacidad de superar cualquier obstáculo.</p>
+                    <p>El acabado en bronce patinado le da un aspecto atemporal y elegante.</p>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Especificaciones</h3>
+                    <table class="tabla-specs">
+                        <tr><td>Material</td><td>Bronce patinado</td></tr>
+                        <tr><td>Alto</td><td>45 cm</td></tr>
+                        <tr><td>Ancho</td><td>20 cm</td></tr>
+                        <tr><td>Profundidad</td><td>18 cm</td></tr>
+                        <tr><td>Peso</td><td>3.5 kg</td></tr>
+                        <tr><td>Año</td><td>2024</td></tr>
+                    </table>
+                </div>
+                
+                <div class="obra-seccion">
+                    <h3>Incluye</h3>
+                    <ul class="lista-incluye">
+                        <li>✓ Certificado de autenticidad firmado</li>
+                        <li>✓ Base de madera barnizada</li>
+                        <li>✓ Embalaje especial para envío</li>
+                        <li>✓ Envío asegurado</li>
+                    </ul>
+                </div>
+                
+                <a href="https://wa.me/521234567890?text=Hola, me interesa la escultura RENACER ($850 USD)" 
+                   class="btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar / Comprar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

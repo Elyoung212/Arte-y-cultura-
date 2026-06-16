@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArteScultura | Esculturas y Arte Original</title>
+    <link rel="stylesheet" href="Menup.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVEGACIÓN
+    ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a  class="logo">
+                <span class="logo-icon">🎨</span>
+                <span class="logo-text">ArteScultura</span>
+            </a>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#galeria" onclick="window.location.href='galeria.html'" class="nav-link">Galería</a></li>
+                <li><a href="#sobre-mi" onclick="window.location.href='sobremi.html'" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#encargos"  onclcik="window.location.href='Encargos.html'" class="nav-link">Encargos</a></li>
+                <li><a href="#contacto" onclick="window.location.href='contacto.html'" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <!-- Botón de contacto -->
+            <a href="#contacto" class="nav-btn">
+                <i class="fab fa-whatsapp"></i>
+                Contactar
+            </a>
+
+            <!-- Menú hamburguesa (móvil) -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION - INICIO
+    ============================================= -->
+    <section id="inicio" class="hero">
+        <!-- Overlay oscuro -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Contenido principal -->
+        <div class="hero-content">
+            <span class="hero-subtitle">Bienvenido a mi mundo artístico</span>
+            <h1 class="hero-title">Donde el Arte <br><span>Cobra Vida</span></h1>
+            <p class="hero-description">
+                Esculturas únicas y originales hechas a mano con pasión y dedicación. 
+                Cada pieza cuenta una historia esperando ser parte de tu espacio.
+            </p>
+            
+            <!-- Botones de acción -->
+            <div class="hero-buttons">
+                <a href="#galeria" class="btn btn-primary">
+                    <i class="fas fa-images"></i>
+                    Ver Galería
+                </a>
+                <a href="#contacto" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Contactar
+                </a>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-text">Obras Creadas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-text">Años de Experiencia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-text">Clientes Felices</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator">
+            <span>Descubre más</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <!-- Redes sociales laterales -->
+        <div class="hero-social">
+            <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" title="Pinterest">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <div class="social-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CARACTERÍSTICAS DESTACADAS
+    ============================================= -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Característica 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Hecho a Mano</h3>
+                    <p>Cada pieza es creada artesanalmente con dedicación y amor por el detalle</p>
+                </div>
+
+                <!-- Característica 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Piezas Únicas</h3>
+                    <p>No encontrarás dos obras iguales, cada escultura es irrepetible</p>
+                </div>
+
+                <!-- Característica 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certificado de Autenticidad</h3>
+                    <p>Todas las obras incluyen certificado firmado por el artista</p>
+                </div>
+
+                <!-- Característica 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Envío Seguro</h3>
+                    <p>Embalaje profesional y envíos asegurados a todo el mundo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECCIÓN DE BIENVENIDA
+    ============================================= -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-grid">
+                <!-- Imágenes -->
+                <div class="welcome-images">
+                    <div class="image-main">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600" alt="Escultura principal">
+                    </div>
+                    <div class="image-secondary">
+                        <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=400" alt="Escultura secundaria">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Años creando arte</span>
+                    </div>
+                </div>
+
+                <!-- Contenido de texto -->
+                <div class="welcome-content">
+                    <span class="section-tag">Bienvenido</span>
+                    <h2>El Arte de Transformar <span>Ideas en Esculturas</span></h2>
+                    <p class="welcome-intro">
+                        Soy <strong>Juan García</strong>, escultor y artista visual. Desde hace más de 15 años 
+                        me dedico a crear piezas que despiertan emociones y transforman espacios.
+                    </p>
+                    <p>
+                        Cada obra que creo nace de una inspiración única: la naturaleza, las emociones 
+                        humanas, o simplemente la belleza de las formas. Trabajo con diversos materiales 
+                        como bronce, madera, resina y piedra, siempre buscando la perfección en cada detalle.
+                    </p>
+
+                    <!-- Lista de beneficios -->
+                    <ul class="welcome-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Obras 100% originales y artesanales</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Posibilidad de piezas personalizadas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Asesoramiento para elegir la obra perfecta</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantía de satisfacción total</span>
+                        </li>
+                    </ul>
+
+                    <!-- Botones -->
+                    <div class="welcome-buttons">
+                        <a href="#sobre-mi" class="btn btn-primary">
+                            Conocer más
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#galeria" class="btn btn-outline">
+                            Ver obras
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         OBRAS DESTACADAS (Preview)
+    ============================================= -->
+    <section class="featured-works">
+        <div class="container">
+            <!-- Encabezado -->
+            <div class="section-header">
+                <span class="section-tag">Galería</span>
+                <h2>Obras Destacadas</h2>
+                <p>Algunas de mis creaciones más recientes y populares</p>
+            </div>
+
+            <!-- Grid de obras -->
+            <div class="works-grid">
+                <!-- Obra 1 -->
+                <div class="work-card">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=500" alt="Renacer">
+                        <div class="work-overlay">
+                            <a href="#" class="work-btn"><i class="fas fa-eye"></i></a>
+                        </div>
+                        <span class="work-badge">Disponible</span>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Escultura</span>
+                        <h3>Renacer</h3>
+                        <p>Bronce patinado · 45 x 20 cm</p>
+                        <div class="work-footer">
+                            <span class="work-price">$850 USD</span>
+                            <a href="#" class="work-link">Ver detalles →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Obra 2 -->
+                <div class="work-card">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=500" alt="Viento de Mar">
+                        <div class="work-overlay">
+                            <a href="#" class="work-btn"><i class="fas fa-eye"></i></a>
+                        </div>
+                        <span class="work-badge">Disponible</span>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Abstracto</span>
+                        <h3>Viento de Mar</h3>
+                        <p>Resina con pigmentos · 30 x 25 cm</p>
+                        <div class="work-footer">
+                            <span class="work-price">$420 USD</span>
+                            <a href="#" class="work-link">Ver detalles →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Obra 3 -->
+                <div class="work-card">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=500" alt="Equilibrio">
+                        <div class="work-overlay">
+                            <a href="#" class="work-btn"><i class="fas fa-eye"></i></a>
+                        </div>
+                        <span class="work-badge sold">Vendida</span>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Abstracto</span>
+                        <h3>Equilibrio</h3>
+                        <p>Metal y piedra · 55 x 30 cm</p>
+                        <div class="work-footer">
+                            <span class="work-price">$1,200 USD</span>
+                            <a href="#" class="work-link">Ver detalles →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón ver más -->
+            <div class="section-cta">
+                <a href="#galeria" class="btn btn-primary btn-large">
+                    <i class="fas fa-th"></i>
+                    Ver Galería Completa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         LLAMADA A LA ACCIÓN
+    ============================================= -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes una idea en mente?</h2>
+                <p>Creo obras personalizadas según tu visión. Cuéntame tu proyecto y hagamos realidad esa pieza única que imaginas.</p>
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn btn-white">
+                        <i class="fab fa-whatsapp"></i>
+                        Contactar por WhatsApp
+                    </a>
+                    <a href="#encargos" class="btn btn-outline-white">
+                        Saber más sobre encargos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BOTÓN WHATSAPP FLOTANTE
+    ============================================= -->
+    <a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">¿Te ayudo?</span>
+    </a>
+
+    <!-- ============================================
+         JAVASCRIPT
+    ============================================= -->
+    <script>
+        // Menú móvil
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer clic en enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras por Encargo | ArteScultura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="encargos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVEGACIÓN
+    ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a  class="logo">
+                <span class="logo-icon">🎨</span>
+                <span class="logo-text">ArteScultura</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="sobremi.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="encargos.html" class="nav-link active">Encargos</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <a href="https://wa.me/521234567890" class="nav-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Contactar
+            </a>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HEADER DE PÁGINA
+    ============================================= -->
+    <header class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <span class="page-tag">Personalizado</span>
+            <h1>Obras por Encargo</h1>
+            <p>Creo piezas únicas según tu visión. Cuéntame tu idea y hagamos realidad esa escultura que imaginas.</p>
+            <nav class="breadcrumb">
+                <a href="Menup.html"><i class="fas fa-home"></i> Inicio</a>
+                <span>/</span>
+                <span>Encargos</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         INTRODUCCIÓN
+    ============================================= -->
+    <section class="intro-encargos">
+        <div class="container">
+            <div class="intro-grid">
+                
+                <!-- Contenido -->
+                <div class="intro-contenido">
+                    <span class="seccion-tag">Arte a tu medida</span>
+                    <h2>Tu Idea, Mi <span>Creación</span></h2>
+                    <p class="intro-destacado">
+                        ¿Tienes una idea especial en mente? ¿Buscas una pieza única que represente 
+                        algo significativo para ti? Puedo crear una escultura personalizada que 
+                        capture exactamente lo que imaginas.
+                    </p>
+                    <p>
+                        Cada encargo es un proyecto único donde trabajo contigo desde la idea inicial 
+                        hasta la pieza terminada. Ya sea un regalo especial, una obra para tu hogar, 
+                        una escultura corporativa o un monumento, me comprometo a crear algo que 
+                        supere tus expectativas.
+                    </p>
+                    
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Diseño 100% personalizado</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comunicación constante durante el proceso</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Materiales de primera calidad</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificado de autenticidad incluido</span>
+                        </div>
+                    </div>
+
+                    <a href="#solicitar" class="btn-primario">
+                        <i class="fas fa-magic"></i>
+                        Solicitar Cotización
+                    </a>
+                </div>
+                
+                <!-- Imagen -->
+                <div class="intro-imagen">
+                    <div class="imagen-principal">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600" alt="Artista trabajando en encargo">
+                    </div>
+                    <div class="imagen-badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>+50 encargos realizados</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROCESO DE ENCARGO
+    ============================================= -->
+    <section class="proceso-encargo">
+        <div class="container">
+            <div class="section-header">
+                <span class="seccion-tag">Cómo funciona</span>
+                <h2>Proceso de Encargo</h2>
+                <p>Un camino claro desde tu idea hasta la obra terminada</p>
+            </div>
+
+            <div class="proceso-timeline">
+                
+                <!-- Paso 1 -->
+                <div class="proceso-paso">
+                    <div class="paso-numero">1</div>
+                    <div class="paso-linea"></div>
+                    <div class="paso-contenido">
+                        <div class="paso-icono">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Cuéntame tu Idea</h3>
+                        <p>Descríbeme qué imaginas: el concepto, tamaño aproximado, materiales preferidos, dónde estará ubicada. Puedes enviarme referencias, fotos o bocetos.</p>
+                        <span class="paso-tiempo"><i class="fas fa-clock"></i> Día 1</span>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="proceso-paso">
+                    <div class="paso-numero">2</div>
+                    <div class="paso-linea"></div>
+                    <div class="paso-contenido">
+                        <div class="paso-icono">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Propuesta y Boceto</h3>
+                        <p>Creo un boceto o maqueta digital basado en tu idea. Te presento opciones de diseño, presupuesto detallado y tiempo estimado de elaboración.</p>
+                        <span class="paso-tiempo"><i class="fas fa-clock"></i> 3-5 días</span>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="proceso-paso">
+                    <div class="paso-numero">3</div>
+                    <div class="paso-linea"></div>
+                    <div class="paso-contenido">
+                        <div class="paso-icono">
+                            <i class="fas fa-file-signature"></i>
+                        </div>
+                        <h3>Aprobación e Inicio</h3>
+                        <p>Una vez aprobado el diseño y el presupuesto, se realiza un anticipo del 50% para comenzar. Firmamos un acuerdo con todos los detalles del proyecto.</p>
+                        <span class="paso-tiempo"><i class="fas fa-clock"></i> Día 7</span>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="proceso-paso">
+                    <div class="paso-numero">4</div>
+                    <div class="paso-linea"></div>
+                    <div class="paso-contenido">
+                        <div class="paso-icono">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Creación de la Obra</h3>
+                        <p>Trabajo en tu pieza con dedicación. Te envío fotos y videos del progreso para que veas cómo cobra vida tu idea. Puedes solicitar ajustes durante esta etapa.</p>
+                        <span class="paso-tiempo"><i class="fas fa-clock"></i> 2-12 semanas</span>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="proceso-paso">
+                    <div class="paso-numero">5</div>
+                    <div class="paso-linea"></div>
+                    <div class="paso-contenido">
+                        <div class="paso-icono">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Entrega Final</h3>
+                        <p>Pago del 50% restante. Tu obra se embala de forma profesional y se envía asegurada. Incluye certificado de autenticidad y guía de cuidados.</p>
+                        <span class="paso-tiempo"><i class="fas fa-clock"></i> 5-15 días envío</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TIPOS DE ENCARGOS
+    ============================================= -->
+    <section class="tipos-encargos">
+        <div class="container">
+            <div class="section-header">
+                <span class="seccion-tag">Especialidades</span>
+                <h2>¿Qué Puedo Crear para Ti?</h2>
+                <p>Diferentes tipos de obras personalizadas que puedo realizar</p>
+            </div>
+
+            <div class="tipos-grid">
+                
+                <!-- Tipo 1 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=400" alt="Esculturas decorativas">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa una escultura decorativa por encargo" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Esculturas Decorativas</h3>
+                        <p>Piezas únicas para interiores que transforman cualquier espacio en una galería personal.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> Para sala, oficina, lobby</li>
+                            <li><i class="fas fa-check"></i> Tamaños personalizados</li>
+                            <li><i class="fas fa-check"></i> Diversos materiales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tipo 2 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Esculturas para jardín">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa una escultura para jardín por encargo" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Esculturas de Jardín</h3>
+                        <p>Obras resistentes a la intemperie que embellecen espacios exteriores y jardines.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> Materiales resistentes</li>
+                            <li><i class="fas fa-check"></i> Grandes dimensiones</li>
+                            <li><i class="fas fa-check"></i> Instalación incluida*</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tipo 3 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=400" alt="Bustos y retratos">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa un busto o retrato por encargo" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Bustos y Retratos</h3>
+                        <p>Esculturas personalizadas de personas, inmortalizando rostros y expresiones.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> A partir de fotografías</li>
+                            <li><i class="fas fa-check"></i> Alto nivel de detalle</li>
+                            <li><i class="fas fa-check"></i> Homenajes y tributos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tipo 4 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=400" alt="Arte corporativo">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa arte corporativo por encargo" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Arte Corporativo</h3>
+                        <p>Piezas para empresas, hoteles, restaurantes y espacios comerciales.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> Diseño con identidad de marca</li>
+                            <li><i class="fas fa-check"></i> Proyectos a gran escala</li>
+                            <li><i class="fas fa-check"></i> Facturación empresarial</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tipo 5 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400" alt="Regalos especiales">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa una escultura como regalo especial" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Regalos Especiales</h3>
+                        <p>Piezas únicas para ocasiones especiales: bodas, aniversarios, cumpleaños.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> Significado personalizado</li>
+                            <li><i class="fas fa-check"></i> Empaque de regalo</li>
+                            <li><i class="fas fa-check"></i> Mensaje grabado opcional</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tipo 6 -->
+                <div class="tipo-card">
+                    <div class="tipo-imagen">
+                        <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=400" alt="Trofeos y premios">
+                        <div class="tipo-overlay">
+                            <a href="https://wa.me/521234567890?text=Hola, me interesa un trofeo o premio por encargo" target="_blank" class="tipo-btn">
+                                Consultar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tipo-contenido">
+                        <div class="tipo-icono">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Trofeos y Premios</h3>
+                        <p>Reconocimientos artísticos únicos para eventos, competencias y premiaciones.</p>
+                        <ul class="tipo-lista">
+                            <li><i class="fas fa-check"></i> Diseño exclusivo</li>
+                            <li><i class="fas fa-check"></i> Grabado personalizado</li>
+                            <li><i class="fas fa-check"></i> Producción en serie</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         INFORMACIÓN DE PRECIOS Y TIEMPOS
+    ============================================= -->
+    <section class="info-precios">
+        <div class="container">
+            <div class="precios-grid">
+                
+                <!-- Tiempos -->
+                <div class="info-card">
+                    <div class="info-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>Tiempos de Elaboración</h3>
+                    </div>
+                    <ul class="info-lista">
+                        <li>
+                            <span class="item-nombre">Piezas pequeñas (hasta 30cm)</span>
+                            <span class="item-valor">2-4 semanas</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Piezas medianas (30-60cm)</span>
+                            <span class="item-valor">4-8 semanas</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Piezas grandes (60-120cm)</span>
+                            <span class="item-valor">8-12 semanas</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Monumentos y proyectos especiales</span>
+                            <span class="item-valor">3-6 meses</span>
+                        </li>
+                    </ul>
+                    <p class="info-nota">
+                        <i class="fas fa-info-circle"></i>
+                        Los tiempos pueden variar según la complejidad del diseño
+                    </p>
+                </div>
+
+                <!-- Precios -->
+                <div class="info-card destacada">
+                    <div class="info-header">
+                        <i class="fas fa-tag"></i>
+                        <h3>Inversión Aproximada</h3>
+                    </div>
+                    <ul class="info-lista">
+                        <li>
+                            <span class="item-nombre">Piezas pequeñas</span>
+                            <span class="item-valor">Desde $300 USD</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Piezas medianas</span>
+                            <span class="item-valor">Desde $600 USD</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Piezas grandes</span>
+                            <span class="item-valor">Desde $1,200 USD</span>
+                        </li>
+                        <li>
+                            <span class="item-nombre">Monumentos</span>
+                            <span class="item-valor">Cotización especial</span>
+                        </li>
+                    </ul>
+                    <p class="info-nota">
+                        <i class="fas fa-info-circle"></i>
+                        El precio final depende de materiales, tamaño y complejidad
+                    </p>
+                </div>
+
+                <!-- Materiales -->
+                <div class="info-card">
+                    <div class="info-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Materiales Disponibles</h3>
+                    </div>
+                    <div class="materiales-tags">
+                        <span class="material-tag">Bronce</span>
+                        <span class="material-tag">Resina</span>
+                        <span class="material-tag">Madera</span>
+                        <span class="material-tag">Piedra</span>
+                        <span class="material-tag">Mármol</span>
+                        <span class="material-tag">Metal</span>
+                        <span class="material-tag">Cerámica</span>
+                        <span class="material-tag">Mixtos</span>
+                    </div>
+                    <p class="info-nota">
+                        <i class="fas fa-info-circle"></i>
+                        Te asesoro sobre el mejor material para tu proyecto
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALERÍA DE ENCARGOS REALIZADOS
+    ============================================= -->
+    <section class="galeria-encargos">
+        <div class="container">
+            <div class="section-header">
+                <span class="seccion-tag">Portfolio</span>
+                <h2>Encargos Realizados</h2>
+                <p>Algunas de las obras personalizadas que he creado para mis clientes</p>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item grande">
+                    <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800" alt="Encargo 1">
+                    <div class="galeria-overlay">
+                        <span class="galeria-categoria">Escultura Corporativa</span>
+                        <h4>Lobby Hotel Marriott</h4>
+                        <p>Bronce · 180cm</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=400" alt="Encargo 2">
+                    <div class="galeria-overlay">
+                        <span class="galeria-categoria">Regalo Aniversario</span>
+                        <h4>Danza del Amor</h4>
+                        <p>Resina · 45cm</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?w=400" alt="Encargo 3">
+                    <div class="galeria-overlay">
+                        <span class="galeria-categoria">Busto Familiar</span>
+                        <h4>Retrato del Abuelo</h4>
+                        <p>Bronce · 35cm</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?w=400" alt="Encargo 4">
+                    <div class="galeria-overlay">
+                        <span class="galeria-categoria">Jardín Privado</span>
+                        <h4>Guardián del Jardín</h4>
+                        <p>Piedra · 120cm</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Encargo 5">
+                    <div class="galeria-overlay">
+                        <span class="galeria-categoria">Premio Empresarial</span>
+                        <h4>Trofeo Innovación</h4>
+                        <p>Metal y Cristal · 40cm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+    ============================================= -->
+    <section class="testimonios-encargos">
+        <div class="container">
+            <div class="section-header">
+                <span class="seccion-tag">Opiniones</span>
+                <h2>Lo que dicen mis clientes</h2>
+                <p>Experiencias de quienes han confiado en mis encargos personalizados</p>
+            </div>
+
+            <div class="testimonios-grid">
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">
+                        "Encargué un busto de mi padre como regalo para mi madre. El resultado fue increíble, 
+                        capturó perfectamente su expresión. Mi madre lloró de emoción al verlo. Un trabajo excepcional."
+                    </p>
+                    <div class="testimonio-autor">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Cliente">
+                        <div>
+                            <h4>María Fernández</h4>
+                            <span>Busto personalizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">
+                        "Necesitábamos una escultura para el lobby de nuestro hotel. Juan entendió perfectamente 
+                        nuestra visión y creó una pieza que impresiona a todos nuestros huéspedes. Muy profesional."
+                    </p>
+                    <div class="testimonio-autor">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+                        <div>
+                            <h4>Carlos Mendoza</h4>
+                            <span>Director Hotel Palacio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-texto">
+                        "Quería algo único para mi jardín y Juan me asesoró perfectamente. Me envió fotos de 
+                        todo el proceso y el resultado final es espectacular. Vale cada centavo invertido."
+                    </p>
+                    <div class="testimonio-autor">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente">
+                        <div>
+                            <h4>Laura Sánchez</h4>
+                            <span>Escultura de jardín</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FORMULARIO DE SOLICITUD
+    ============================================= -->
+    <section class="solicitar-encargo" id="solicitar">
+        <div class="container">
+            <div class="solicitar-grid">
+                
+                <!-- Información -->
+                <div class="solicitar-info">
+                    <span class="seccion-tag">Comienza ahora</span>
+                    <h2>Solicita tu Cotización</h2>
+                    <p>Cuéntame tu idea y te enviaré una propuesta personalizada sin compromiso.</p>
+                    
+                    <div class="solicitar-pasos">
+                        <div class="mini-paso">
+                            <span class="mini-numero">1</span>
+                            <p>Completa el formulario con tu idea</p>
+                        </div>
+                        <div class="mini-paso">
+                            <span class="mini-numero">2</span>
+                            <p>Te contacto en menos de 24 horas</p>
+                        </div>
+                        <div class="mini-paso">
+                            <span class="mini-numero">3</span>
+                            <p>Recibe tu propuesta personalizada</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-directo">
+                        <p>¿Prefieres contacto directo?</p>
+                        <a href="https://wa.me/521234567890?text=Hola, me interesa solicitar un encargo personalizado" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Directo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="solicitar-form">
+                    <form id="formEncargo">
+                        <div class="form-fila">
+                            <div class="form-grupo">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-fila">
+                            <div class="form-grupo">
+                                <label for="telefono">Teléfono / WhatsApp</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+52 123 456 7890">
+                            </div>
+                            <div class="form-grupo">
+                                <label for="tipo">Tipo de Encargo *</label>
+                                <select id="tipo" name="tipo" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="decorativa">Escultura decorativa</option>
+                                    <option value="jardin">Escultura de jardín</option>
+                                    <option value="busto">Busto / Retrato</option>
+                                    <option value="corporativo">Arte corporativo</option>
+                                    <option value="regalo">Regalo especial</option>
+                                    <option value="trofeo">Trofeo / Premio</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-fila">
+                            <div class="form-grupo">
+                                <label for="tamano">Tamaño Aproximado</label>
+                                <select id="tamano" name="tamano">
+                                    <option value="">Selecciona</option>
+                                    <option value="pequeno">Pequeño (hasta 30cm)</option>
+                                    <option value="mediano">Mediano (30-60cm)</option>
+                                    <option value="grande">Grande (60-120cm)</option>
+                                    <option value="monumental">Monumental (+120cm)</option>
+                                    <option value="noseguro">No estoy seguro</option>
+                                </select>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="presupuesto">Presupuesto Estimado</label>
+                                <select id="presupuesto" name="presupuesto">
+                                    <option value="">Selecciona</option>
+                                    <option value="300-600">$300 - $600 USD</option>
+                                    <option value="600-1200">$600 - $1,200 USD</option>
+                                    <option value="1200-2500">$1,200 - $2,500 USD</option>
+                                    <option value="2500+">Más de $2,500 USD</option>
+                                    <option value="abierto">Presupuesto abierto</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="descripcion">Describe tu Idea *</label>
+                            <textarea id="descripcion" name="descripcion" rows="5" placeholder="Cuéntame qué tienes en mente: concepto, estilo, materiales preferidos, dónde estará ubicada la pieza, fechas importantes, etc." required></textarea>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="referencias">¿Tienes Referencias? (opcional)</label>
+                            <input type="text" id="referencias" name="referencias" placeholder="Puedes pegar aquí enlaces a imágenes de referencia">
+                        </div>
+
+                        <button type="submit" class="btn-enviar">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Solicitud
+                        </button>
+                    </form>
+
+                    <!-- Mensaje éxito -->
+                    <div class="form-exito" id="formExito">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>¡Solicitud Enviada!</h4>
+                        <p>Gracias por tu interés. Te contactaré en menos de 24 horas con una propuesta.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FAQ ENCARGOS
+    ============================================= -->
+    <section class="faq-encargos">
+        <div class="container">
+            <div class="section-header">
+                <span class="seccion-tag">Dudas</span>
+                <h2>Preguntas sobre Encargos</h2>
+            </div>
+
+            <div class="faq-grid">
+                
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Qué necesito para solicitar un encargo?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>Solo necesitas una idea o concepto de lo que imaginas. Puede ser una descripción, fotos de referencia, bocetos, o simplemente una emoción que quieras transmitir. Yo me encargo de desarrollar el diseño contigo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Puedo hacer cambios durante el proceso?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>Sí, te envío fotos del progreso y puedes solicitar ajustes menores antes del acabado final. Cambios significativos pueden afectar el tiempo y costo, pero siempre lo discutimos antes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Cómo funciona el pago?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>El pago se divide en dos partes: 50% al aprobar el diseño para comenzar la elaboración, y 50% restante al finalizar, antes del envío. Para proyectos grandes, podemos acordar pagos en más cuotas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Qué pasa si no me gusta el resultado?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>Trabajo contigo durante todo el proceso para asegurar que la pieza sea exactamente lo que imaginas. Por eso es importante la comunicación y las fotos de avance. Mi compromiso es tu satisfacción total.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Hacen envíos internacionales de encargos?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>Sí, envío encargos a cualquier parte del mundo. Para piezas grandes o frágiles, coordino embalaje especializado y envío asegurado. El costo de envío se cotiza según destino y tamaño.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pregunta" onclick="toggleFaq(this)">
+                        <h4>¿Puedo solicitar una réplica de una obra existente?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-respuesta">
+                        <p>No hago réplicas exactas de mis obras, ya que cada pieza es única. Sin embargo, puedo crear una obra con un concepto o estilo similar, adaptada a tus preferencias.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA FINAL
+    ============================================= -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-contenido">
+                <h2>¿Listo para crear algo único?</h2>
+                <p>Cada gran obra comienza con una simple idea. Cuéntame la tuya.</p>
+                <div class="cta-botones">
+                    <a href="#solicitar" class="btn-primario">
+                        <i class="fas fa-pencil-alt"></i>
+                        Solicitar Cotización
+                    </a>
+                    <a href="https://wa.me/521234567890?text=Hola, quiero consultar sobre un encargo personalizado" class="btn-whatsapp-cta" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chatear Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🎨</span>
+                        <span class="logo-text">ArteScultura</span>
+                    </a>
+                    <p>Arte y esculturas originales hechas a mano con pasión.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="encargos.html">Encargos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Tipos de Encargos</h4>
+                    <ul>
+                        <li><a href="#">Esculturas Decorativas</a></li>
+                        <li><a href="#">Esculturas de Jardín</a></li>
+                        <li><a href="#">Bustos y Retratos</a></li>
+                        <li><a href="#">Arte Corporativo</a></li>
+                        <li><a href="#">Trofeos y Premios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> +52 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> contacto@artescultura.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad de México</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ArteScultura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/521234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================
+         JAVASCRIPT
+    ============================================= -->
+    <script>
+        // Menú móvil
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            var faqItem = element.parentElement;
+            var isActive = faqItem.classList.contains('activo');
+            
+            document.querySelectorAll('.faq-item').forEach(function(item) {
+                item.classList.remove('activo');
+            });
+            
+            if (!isActive) {
+                faqItem.classList.add('activo');
+            }
+        }
+
+        // Formulario
+        document.getElementById('formEncargo').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.style.display = 'none';
+            document.getElementById('formExito').style.display = 'block';
+        });
+
+        // Scroll suave a formulario
+        document.querySelectorAll('a[href="#solicitar"]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('solicitar').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
